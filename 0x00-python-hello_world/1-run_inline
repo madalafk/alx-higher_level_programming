@@ -1,0 +1,2 @@
+#!/bin/bash
+python3 <<< $PYCODE  # this will Run the Python code
