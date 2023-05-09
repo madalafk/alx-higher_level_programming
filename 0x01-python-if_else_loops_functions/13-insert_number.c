@@ -6,35 +6,41 @@
  * @number: number to be  inserted.
  *
  * Return: NULL If the function fails
- * else - a pointer to the new node.
+ * else - a pointer to the new_node.
  */
 
-listint_t *insert_node(listint_t **head, int number)
-{
-	listint_t *new = malloc(sizeof(listint_t));
+#include "lists.h"
 
-	if (new == NULL)
+listint_t *insert_node(listint_t **head, int number)
+
+{
+	listint_t *new_node = malloc(sizeof(listint_t));
+
+	if (new_node == NULL)
 
 		return (NULL);
 
-	new->n = number;
-	new->next = NULL;
+	new_node->n = number;
+	new_node->next = NULL;
 
-	if (*head == NULL || (*head)->n >= number)
+	if (*head == NULL || number < (*head)->n)
+
 	{
-		new->next = *head;
-		*head = new;
-		return (new);
+		new_node->next = *head;
+		*head = new_node;
+		return (new_node);
 	}
 
 	listint_t *current = *head;
 
-	while (current->next && current->next->n < number)
+	while (current->next != NULL && current->next->n < number)
 
+	{
 		current = current->next;
+	}
 
-	new->next = current->next;
-	current->next = new;
-
-	return (new);
+	new_node->next = current->next;
+	current->next = new_node;
+	return (new_node);
 }
+
