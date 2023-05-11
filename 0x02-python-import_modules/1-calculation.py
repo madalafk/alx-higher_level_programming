@@ -1,8 +1,7 @@
-#!/usr/bin/python3
-
 if __name__ == "__main__":
 
-""" addition , subtraction , multiplication , division
+    '''
+    This program performs addition, subtraction, multiplication, and division.
 
         a: first integer
         b: second integer
@@ -12,11 +11,13 @@ if __name__ == "__main__":
         The return value. a - b
         The return value. a * b
         The return value. a / b
-        
-"""
+    '''
+
     from calculator_1 import add, sub, mul, div
+
     a = 10
     b = 5
+
     print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
     print("{:d} - {:d} = {:d}".format(a, b, sub(a, b)))
     print("{:d} * {:d} = {:d}".format(a, b, mul(a, b)))
