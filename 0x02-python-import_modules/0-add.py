@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 
-def add(a, b):
-    return a + b
 """ add integers, where:
-    arg : a = ist Int, 2 = 2nd Int
+    arg : a = ist Var, 2 = 2nd Var
     Returns: sum a,b
 """
 if __name__ == "__main__":
