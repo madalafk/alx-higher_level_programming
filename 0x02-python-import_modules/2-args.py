@@ -1,14 +1,10 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
-
-
     '''
     This program prints the number of and the list of its arguments.
-
     '''
-
-import sys
+    import sys
 
     arg = sys.argv
     num_elements = len(arg) - 1
@@ -24,4 +20,3 @@ import sys
     else:
         print("{} argument:".format(num_elements))
         print("{}: {}".format(num_elements, arg[1]))
-
