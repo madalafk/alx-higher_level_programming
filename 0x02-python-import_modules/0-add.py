@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """ add integers, where:
-    arg : a = ist Var, 2 = 2nd Var
+    arg : a = ist int, 2 = 2nd int
     Returns: sum a,b
 """
 if __name__ == "__main__":
