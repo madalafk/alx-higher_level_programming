@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
+
     '''
     A program that imports all functions from the file 
     calculator_1.py and handles basic operations.
     '''
+
     from sys import argv
     from calculator_1 import add, sub, mul, div
 
@@ -31,4 +33,3 @@ I        print('{:d} {:s} {:d} = {:d}'.format(num1, argv[2], num2, result))
         exit(1)
 
     exit(0)
-
