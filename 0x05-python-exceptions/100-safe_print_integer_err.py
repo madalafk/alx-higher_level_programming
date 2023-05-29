@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def safe_print_integer_err(value):
     """
     Prints int and handles the potential exceptions.
@@ -11,8 +13,8 @@ def safe_print_integer_err(value):
     import sys
     try:
         print("{:d}".format(value))
-    except Exception as error:
-        sys.stderr.write("Exception: {}\n".format(error))
-        return False
+    except Exception as err:
+        sys.stderr.write("Exception: {}\n".format(err))
+        return (False)
     else:
-        return True
+        return (True)
