@@ -4,5 +4,4 @@
 
 class Square:
     """This Empty class (Square) defines a square"""
-    def __init__(self):
-        pass
+    pass
