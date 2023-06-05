@@ -1,52 +1,55 @@
 #!/usr/bin/python3
-"""The empty class that Rectangle  Defines a Rectangle."""
+""" This empty class Rectangle defines a rectangle
+"""
 
 
 class Rectangle:
-    """Represent a rectangle."""
-
+    """ class rectangle"""
     def __init__(self, width=0, height=0):
-        """Initializes new Rectangle.
-
-        Args:
-            width (int): New Rectangle width.
-            height (int): New rectangle height
-        """
+        """ a class allows for creating instances with
+	    optional width and height values
+	"""
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """sets width of the Rectangle."""
-        return s.elf.__width
+        """sets the  width
+        """
+        return (self.__width)
+
+    @property
+    def height(self):
+        """sets the  height
+        """
+        return (self.__height)
 
     @width.setter
     def width(self, value):
-        if not isinstance(value, int):
+        """ width setter
+        """
+        if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
 
-    @property
-    def height(self):
-        """sets height of the Rectangle."""
-        return self.__height
-
     @height.setter
     def height(self, value):
-        if not isinstance(value, int):
+        """ height setter
+        """
+        if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
 
     def area(self):
-        """Return (area of the Rectangle)."""
-        return (self.__width * self.__height)
+        """ return (rectangle area)"""
+        return self.__width * self.__height
 
     def perimeter(self):
-        """Return (perimeter of the Rectangle)."""
-        if self.__width == 0 or self.__height == 0:
+        """ return (rectangle perimiter)"""
+        if self.__width is 0 or self.__height is 0:
             return (0)
-        return ((self.__width * 2) + (self.__height * 2))
+        return self.__width * 2 + self.__height * 2
