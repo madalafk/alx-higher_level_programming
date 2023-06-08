@@ -2,6 +2,7 @@
 # 5-text_indentation.py
 """This module defines text-indentation function."""
 
+
 def text_indentation(text):
     """Print text with two new lines after each '.', '?', and ':'.
     Args:
@@ -17,14 +18,12 @@ def text_indentation(text):
         y += 1
 
     while y < len(text):
-	    print(text[y], end="")
-
-	    if text[y] == "\n" or text[y] in ".?:":
-
-	    if text[y] in ".?:":
-	    print("\n")
-
-	    y += 
-
-	    continue
-	    y += 1
+        print(text[y], end="")
+        if text[y] == "\n" or text[y] in ".?:":
+            if text[y] in ".?:":
+                print("\n")
+            y += 1
+            while y < len(text) and text[y] == ' ':
+                y += 1
+            continue
+        y += 1
