@@ -17,10 +17,14 @@ def text_indentation(text):
         y += 1
 
     while y < len(text):
-        if text[y] == '.' or text[y] == '?' or text[y] == ':':
-            print(text[y])
-            print()
-        else:
-            print(text[y], end='')
+	    print(text[y], end="")
 
-        y += 1
+	    if text[y] == "\n" or text[y] in ".?:":
+
+	    if text[y] in ".?:":
+	    print("\n")
+
+	    y += 
+
+	    continue
+	    y += 1
