@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# 5-save_to_json_file.py
+# 6-load_from_json_file.py
 
 """ This Module has function that writes an Object to a text file,
 	using a JSON representation
