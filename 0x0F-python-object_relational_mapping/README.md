@@ -1,5 +1,5 @@
 0x0F. Python - Object-relational mapping
-Python      OOP         SQL            MySQL           ORM             SQLAlchemy
+Python      |OOP         |SQL            |MySQL           |ORM           |SQLAlchemy
 
 Learning Objectives
 In this project, I have learnt the following:
@@ -9,7 +9,9 @@ In this project, I have learnt the following:
 •	How to INSERT rows in a MySQL table from a Python script
 •	What ORM means
 •	How to map a Python Class to a MySQL table
-Tasks
+
+
+**Tasks**
 0. Get all states
 Write a script that lists all states from the database hbtn_0e_0_usa:
 •	Your script should take 3 arguments: mysql username, mysql password and database name (no argument validation needed)
