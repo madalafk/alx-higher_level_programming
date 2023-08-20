@@ -1,19 +1,17 @@
 #!/usr/bin/python3
-""" model_state.py named model_city.py containing class definition of a City
 """
-import sys
-from model_state import Base, State
-from model_city import City
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
+class definition of a City
+"""
+from model_state import Base
+from sqlalchemy import Column, Integer, String, ForeignKey
+from sqlalchemy.ext.declarative import declarative_base
 
 
-if __name__ == "__main__":
-    engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'
-                           .format(sys.argv[1], sys.argv[2], sys.argv[3]))
-    Base.metadata.create_all(engine)
-    Session = sessionmaker(bind=engine)
-    session = Session()
-    for instance in (session.query(State.name, City.id, City.name)
-                     .filter(State.id == City.state_id)):
-        print(instance[0] + ": (" + str(instance[1]) + ") " + instance[2])
+class City(Base):
+    """
+    defines each city
+    """
+    __tablename__ = 'cities'
+    id = Column(Integer, unique=True, nullable=False, primary_key=True)
+    name = Column(String(128), nullable=False)
+    state_id = Column(Integer, ForeignKey("states.id"), nullable=False)
