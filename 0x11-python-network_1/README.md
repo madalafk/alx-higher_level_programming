@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 0x12. Python - Network #1
+=======
+0x11. Python - Network #1
+>>>>>>> fa6a661cd59a4a8bdce57272ab466ad4c556421c
 
 
 Python                 |Scripting                               |Back-end                               |API
@@ -111,7 +115,10 @@ Write a Python script that takes your GitHub credentials (username and password)
 
 
 10. Time for an interview!
+<<<<<<< HEAD
 Score: 0.0% (Checks completed: 0.0%)
+=======
+>>>>>>> fa6a661cd59a4a8bdce57272ab466ad4c556421c
 The Holberton School staff evaluates candidates applying for a back-end position with multiple technical challenges, like this one:
 Please list 10 commits (from the most recent to oldest) of the repository “rails” by the user “rails”
 You must use the GitHub API, here is the documentation https://developer.github.com/v3/repos/commits/
@@ -124,3 +131,7 @@ Write a Python script that takes 2 arguments in order to solve this challenge.
 •	You don’t need to check arguments passed to the script (number or type)
 Only 17% of applicants for a backend position at Holberton finished this task in less than 15 minutes.
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> fa6a661cd59a4a8bdce57272ab466ad4c556421c
